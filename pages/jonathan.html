@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f6fa;
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        background: white;
+        width: 100%;
+        max-width: 480px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .photo {
+        flex: 1;
+        margin-right: 12px;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+        max-height: 260px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .info {
+        flex: 1.2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info h2 {
+        margin: 0 0 8px 0;
+        font-size: 28px;
+        color: #222;
+    }
+
+    .info p {
+        margin: 4px 0;
+        font-size: 15px;
+        color: #444;
+        line-height: 1.4;
+    }
+
+    .label {
+        font-weight: bold;
+        color: #000;
+    }
+
+    /* Make layout vertical on small screens */
+    @media (max-width: 600px) {
+        .card {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .photo {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        .info h2 {
+            font-size: 28px;
+        }
+
+        .info p {
+            font-size: 16px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+    <div class="photo">
+        <img src="../images/Jonathan.png" alt="Jonathan Bashange">
+    </div>
+
+    <div class="info">
+        <h2>JONATHAN BASHANGEE</h2>
+        <p><span class="label">Class:</span> MIDDLE</p>
+        <p><span class="label">Graduation Year:</span> 2025</p>
+        <p><span class="label">Number of Parents:</span> 1</p>
+        <p><span class="label">Message:</span> <i> “Proud Bright Academy student, building a strong future 😊"</i></p>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
