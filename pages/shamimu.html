@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brightino Tech Lab</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-image: url('graduates.jpeg'); /* FULL PAGE BG */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: -1;
+    }
+
+    .card {
+        width: 95%;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 18px;
+        background-color: rgba(255, 255, 255, 0.85);
+        position: relative;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        overflow: hidden;
+    }
+
+    /* WATERMARK (LOGO.PNG) */
+    .card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 240px;
+        opacity: 0.15;
+        z-index: 0;
+    }
+
+    .card * {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1a73e8;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .member-name {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 12px;
+        text-decoration: underline;
+    }
+
+    .tagline {
+        text-align: center;
+        font-size: 18px;
+        color: #0b57d0;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    .footer {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 14px;
+        color: #444;
+    }
+
+    /* BUTTONS BELOW CARD */
+    .buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #1a73e8;
+        color: #fff;
+        padding: 12px 20px;
+        margin: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: 0.2s ease;
+    }
+
+    .btn:hover {
+        background-color: #0b57d0;
+        transform: translateY(-2px);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="card">
+
+    <h1>BRIGHT ACDEMY DAYCARE CENTER</h1>
+
+    <h2 class="member-name">SHAMIMU MIRAJI</h2>
+
+    <img src="cap.png" alt="Tech Icon"
+         style="width:140px; display:block; margin:0 auto;">
+
+    <p style="font-size:17px; color:#000; margin-top:15px;">
+        Welcome to the <strong>Pre-Unit Graduation Ceremony 2025</strong>!
+        <br><br>
+        We from the <strong>Brightino Tech Lab</strong> are honored to support
+        this special celebration and make the day brighter with technology.
+    </p>
+
+    <p class="tagline">Tech Support • Innovation • Smart Learning</p>
+
+    <p>
+        Today we celebrate our young graduates and stand together with
+        the school community to inspire learning, creativity and future dreams.
+    </p>
+
+    <div class="footer">
+        “Elimu ni Mwanga wa Maisha”
+        <br> Bright Academy - Tech & Innovation Program
+        <br> By BRIGHTINO TECH LAB
+    </div>
+
+</div>
+
+<!-- BUTTONS -->
+<div class="buttons">
+    <a href="timetable.pdf" class="btn" target="_blank">📅 View Graduation Timetable</a>
+    <a href="info.html" class="btn">ℹ️ More About the School</a>
+</div>
+
+</body>
+</html>
